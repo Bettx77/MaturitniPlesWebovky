@@ -11,6 +11,14 @@
     font-family: 'ArsenicaBold';
     src: url('fonts/ArsenicaTrial-Bold.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Arimo';
+    src: url('fonts/Arimo-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ArsenicaNumbers';
+    src: url('fonts/LibreCaslonDisplay-Regular.ttf') format('truetype');
+}
 *{
     margin: 0;
     padding: 0
@@ -72,21 +80,38 @@ body {
 .content h1 {
     font-size: calc(1.1rem + 1vw);
     margin: 0.5rem 0;
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 
 .content h2 {
-    font-size: calc(2rem + 1.5vw);
+    font-size: calc(2rem + 3vw);
     font-weight: 400;
     margin: 0.5rem 0;
     font-family: 'Metropolis', sans-serif;
     letter-spacing: 0.1em;
-    padding-bottom: 6vh;
+    padding-top: 3vh;
+}
+
+#program {
+    font-size: calc(2rem + 3vw);
+    font-weight: 400;
+    margin: 0.5rem 0;
+    font-family: 'Metropolis', sans-serif;
+    letter-spacing: 0.1em;
+    padding-top: 12vh;
+}
+
+#andArimoFont {
+    font-family: 'Arimo', sans-serif;
+}
+
+.arsenicaNumbers{
+    font-family: 'ArsenicaNumbers', sans-serif;
 }
 
 .content h3 {
-    font-size: calc(1.4rem + 1vw);
-    font-weight: 600;
+    font-size: calc(1.7rem + 1vw);
+    font-weight: 1000;
     margin: 0.5rem 0;
     font-family: 'ArsenicaBold', sans-serif;
 
