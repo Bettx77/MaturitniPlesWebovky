@@ -1,15 +1,15 @@
 /* styles.css */
 @font-face {
     font-family: 'Metropolis';
-    src: url('Metropolis1920_Regular_400.otf') format('opentype');
+    src: url('fonts/Metropolis1920_Regular_400.otf') format('opentype');
 }
 @font-face {
     font-family: 'Arsenica';
-    src: url('ArsenicaTrial-Regular.ttf') format('truetype');
+    src: url('fonts/ArsenicaTrial-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'ArsenicaBold';
-    src: url('ArsenicaTrial-Bold.ttf') format('truetype');
+    src: url('fonts/ArsenicaTrial-Bold.ttf') format('truetype');
 }
 *{
     margin: 0;
