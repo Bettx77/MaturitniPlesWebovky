@@ -1,0 +1,115 @@
+/* styles.css */
+@font-face {
+    font-family: 'Metropolis';
+    src: url('Metropolis1920_Regular_400.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Arsenica';
+    src: url('ArsenicaTrial-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ArsenicaBold';
+    src: url('ArsenicaTrial-Bold.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: black;
+    color: #cd9c4f;
+    font-family: 'Arsenica', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/* Rohy */
+.corner {
+    position: absolute;
+    width: 200px;
+    max-width: 40vw;
+}
+
+.top-left {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    transform: rotate(270deg);
+}
+
+.top-right {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    transform: rotate(180deg);
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(90deg);
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(0deg);
+}
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Obsah */
+.content h1 {
+    font-size: calc(1.1rem + 1vw);
+    margin: 0.5rem 0;
+    padding-top: 15vh;
+}
+
+.content h2 {
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 400;
+    margin: 0.5rem 0;
+    font-family: 'Metropolis', sans-serif;
+    letter-spacing: 0.1em;
+    padding-bottom: 6vh;
+}
+
+.content h3 {
+    font-size: calc(1.4rem + 1vw);
+    font-weight: 600;
+    margin: 0.5rem 0;
+    font-family: 'ArsenicaBold', sans-serif;
+
+}
+
+.content p {
+    font-size: calc(1rem + 0.5vw);
+    margin: 0.5rem 0;
+}
+
+.classes {
+    font-size: calc(1.2rem + 0.5vw);
+    font-weight: 700;
+}
+
+/* Středová dekorace */
+.center-decor {
+    width: 15%;
+    max-width: 100px;
+    height: auto;
+    margin: 1.5rem auto;
+    display: block;
+}
+p {
+    text-align: center;
+}
