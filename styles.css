@@ -105,9 +105,6 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
-#left-align {
-    text-align: left;
-}
 
 .arsenicaNumbers{
     font-family: 'ArsenicaNumbers', sans-serif;
@@ -143,6 +140,32 @@ body {
 .content p {
     font-size: calc(1rem + 0.5vw);
     margin: 0.5rem 0;
+}
+
+.schedule-table {
+    border-collapse: separate;
+    font-family: 'Arsenica', sans-serif;
+    text-align: left;
+    width: 80%;
+    margin: 20px auto;
+    font-weight: normal;
+    font-size: 1.5rem;
+    border-spacing: 2em 10px;
+    table-layout: auto;
+}
+
+.schedule-table td:first-child {
+    width: 10%;
+    white-space: nowrap;
+}
+
+.schedule-table td:last-child {
+    width: auto;
+    white-space: nowrap;
+}
+
+.schedule-table .arsenicaNumbers {
+    font-weight: bold;
 }
 
 .classes {
