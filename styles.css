@@ -207,9 +207,17 @@ body {
 }
 
 
-
 .schedule-table .arsenicaNumbers {
     font-weight: bold;
+}
+
+#sponsors {
+    font-size: calc(2rem + 3vw);
+    font-weight: 400;
+    margin: 0.5rem 0;
+    font-family: 'Metropolis', sans-serif;
+    letter-spacing: 0.1em;
+    padding-top: 12vh;
 }
 
 /* Středová dekorace */
@@ -223,4 +231,29 @@ body {
 
 p {
     text-align: center;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.sponsors-grid img {
+    max-width: 100%;
+    max-height: 150px;
+    height: auto;
+    width: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsors-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }

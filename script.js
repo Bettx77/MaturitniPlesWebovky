@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null, // Sleduje celé okno
         rootMargin: '-100px 0px -100px 0px', // Přidá extra prostor (odsazení)
-        threshold: 0.2 // Spustí se, když je 20 % obsahu viditelných
+        threshold: 0.1 // Spustí se, když je 20 % obsahu viditelných
     };
 
     const observerCallback = (entries) => {
