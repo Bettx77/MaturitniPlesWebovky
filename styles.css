@@ -233,27 +233,45 @@ p {
     text-align: center;
 }
 
+.white-section {
+    background-color: white; /* Bílé pozadí */
+    width: 100vw; /* Pokrytí celé šířky stránky */
+    margin: 0; /* Odstranění mezer kolem */
+    padding: 2rem 0; /* Odsazení nahoře a dole */
+    display: flex; /* Flexbox pro zarovnání obsahu */
+    justify-content: center; /* Zarovnání obsahu na střed */
+    position: relative;
+    z-index: 0;
+}
+
+.sponsors-section {
+    width: 100%; /* Aby sekce SPONZOŘI pokrývala celou šířku */
+    max-width: 1200px; /* Maximální šířka pro lepší čitelnost */
+    padding: 0 1rem; /* Vnitřní odsazení */
+    position: relative;
+    z-index: 1;
+}
+
 .sponsors-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Dynamické přizpůsobení sloupců */
+    gap: 1rem; /* Mezera mezi logy */
+    justify-items: center; /* Zarovnání log na střed */
+    align-items: center; /* Vertikální zarovnání na střed */
+    position: relative;
+    z-index: 2;
 }
 
 .sponsors-grid img {
     max-width: 100%;
-    max-height: 150px;
-    height: auto;
-    width: auto;
-    display: block;
-    border-radius: 8px;
-    object-fit: contain;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-height: 150px; /* Omezit výšku log */
+    object-fit: contain; /* Zachování poměru stran */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekt */
+    position: relative;
+    z-index: 3;
 }
 
 .sponsors-grid img:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Zvýraznění při najetí myší */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Stín při najetí myší */
 }
