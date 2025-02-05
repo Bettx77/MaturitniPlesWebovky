@@ -166,16 +166,15 @@ body {
 /* Tabulka */
 
 .schedule-table {
-    width: 100%;
-    max-width: 100%;
-    margin: 20px auto;
+    width: 80%; /* Adjust the width as needed */
+    margin: 40px auto; /* Center the table horizontally */
     border-collapse: separate;
     border-spacing: 2em 10px;
     table-layout: auto;
     font-family: 'Arsenica', sans-serif;
     text-align: left;
     font-weight: 600;
-    font-size: calc(1.5rem + 1vw);;
+    font-size: calc(1.5rem + 1vw);
     overflow-x: auto;
 }
 
@@ -200,8 +199,8 @@ body {
     }
 
     .schedule-table td:last-child {
-        white-space: normal;
-        word-break: break-word;
+        white-space: normal; /* Allows text to wrap at spaces */
+        word-wrap: break-word;
     }
 
 }
@@ -222,7 +221,7 @@ body {
 
 /* Středová dekorace */
 .center-decor {
-    width: 15%;
+    width: 35%;
     max-width: 100px;
     height: auto;
     margin: 1.5rem auto;
@@ -234,12 +233,12 @@ p {
 }
 
 .white-section {
-    background-color: white; /* Bílé pozadí */
-    width: 100vw; /* Pokrytí celé šířky stránky */
-    margin: 0; /* Odstranění mezer kolem */
-    padding: 2rem 0; /* Odsazení nahoře a dole */
-    display: flex; /* Flexbox pro zarovnání obsahu */
-    justify-content: center; /* Zarovnání obsahu na střed */
+    background-color: white;
+    width: 100vw;
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
     position: relative;
     z-index: 0;
 }
